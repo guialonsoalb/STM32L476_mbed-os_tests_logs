@@ -13,7 +13,7 @@ A number of single tests "mbed-os-features-storage-nvstore-tests-nvstore-functio
 Attached there are several logs run over said boards. Logs named "xxxx_log0" include full compile & run test log while the rest show run test log only.
 
 ## Just one dummy "printf" seems to help(?) in some way, in some cases, to apparently solve the problem
-After digging into the code and adding some debug points in some parts of the code trying to figure out where the problem could be we found out by casuality that adding a dummy `printf("\n");` at the end of `static void nvstore_multi_thread_test()`function found in `mmbed-os/features/storage/nvstore/TESTS/nvstore/functionality/main.cpp` affected in some way helping to pass much more tests than befor, but not all. 
+After digging into the code and adding some debug points in some parts of the code trying to figure out where the problem could be we found out by casuality that adding a dummy `printf("\n");` at the end of `static void nvstore_multi_thread_test()`function found in `mmbed-os/features/storage/nvstore/TESTS/nvstore/functionality/main.cpp` affected in some way helping to pass much more tests than without said dummy-print, but not all. 
 
 We checked that behaviour by adding said dummy-print on this line: https://github.com/ARMmbed/mbed-os/blob/46603f831e13705d5aab4f73d52f00611e1f4d7d/features/storage/nvstore/TESTS/nvstore/functionality/main.cpp#L565
 
