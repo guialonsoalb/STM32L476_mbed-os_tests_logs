@@ -1,4 +1,6 @@
-# Issue found related with test "mbed-os-features-storage-nvstore-tests-nvstore-functionality" over boards mounting STM32L476xx and STM32L475xx
+# Issue with mbed-os "nvstore-functionality" test over STM32L476xx and STM32L475xx
+
+## Issue found related with test "mbed-os-features-storage-nvstore-tests-nvstore-functionality" over boards mounting STM32L476xx and STM32L475xx
 After a number of full mbed-os tests run over RHOMBIO_L476DMW1K it was seen that mbed-os-features-storage-nvstore-tests-nvstore-functionality test failed many times with different compilers, specially with ARMC6. We then run same test over several ST boards and found out that it failed even more often than over RHOMBIO board.
 
 A number of single tests "mbed-os-features-storage-nvstore-tests-nvstore-functionality" were then run over following boards:
