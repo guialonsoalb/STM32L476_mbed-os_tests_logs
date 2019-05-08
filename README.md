@@ -25,22 +25,19 @@ For example, all tests run with ARMC6 over RHOMBIO_L476DMW1K and DISCO_L476VG fa
 
 ## Summary of test results
 | Test run: 	mbed-os-features-storage-nvstore-tests-nvstore-functionality |
-| -------------------------------------------------------------------------- |
+| ------------------------------------------------------------------------ |
+
 | Compiler & Test_log | DISCO_L475VG_IOT01A | NUCLEO_L476RG | DISCO_L476VG | RHOMBIO_L476DMW1K |
 | ------------------- | ------------------- | ------------- | ------------ | ----------------- |
-| GCC_ARM_Test-0 | - | - | ERROR | - |
 | GCC_ARM_Test-1 | ERROR | ERROR | ERROR | ERROR |
 | GCC_ARM_Test-2 | ERROR | ERROR | ERROR | OK |
 | GCC_ARM_Test-3 | ERROR | ERROR | ERROR | OK |
-| ARMC5_Test-0 | ERROR | - | ERROR | ERROR |
 | ARMC5_Test-1 | ERROR | ERROR | ERROR | ERROR |
 | ARMC5_Test-2 | ERROR | ERROR | ERROR | ERROR |
 | ARMC5_Test-3 | ERROR | ERROR | ERROR | ERROR |
-| ARMC6_Test-0 | ERROR | - | - | - |
 | ARMC6_Test-1 | ERROR | OK | ERROR | ERROR |
 | ARMC6_Test-2 | ERROR | OK | ERROR | ERROR |
 | ARMC6_Test-3 | ERROR | OK | ERROR | ERROR |
-| IAR_Test-0 | - |-| OK | OK |
 | IAR_Test-1 | OK | ERROR | OK | OK |
 | IAR_Test-2 | OK | OK | OK | OK |
 | IAR_Test-3 | OK | ERROR | OK | OK |
