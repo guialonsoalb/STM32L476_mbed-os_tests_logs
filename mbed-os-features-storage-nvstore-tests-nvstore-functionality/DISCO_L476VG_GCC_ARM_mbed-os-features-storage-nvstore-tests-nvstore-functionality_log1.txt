@@ -1,0 +1,193 @@
+Building project functionality (DISCO_L476VG, GCC_ARM)
+Scan: GCC_ARM
+Scan: functionality
+Macros: -D__MBED__=1 -DDEVICE_I2CSLAVE=1 -D__FPU_PRESENT=1 -DDEVICE_PORTOUT=1 -DUSBHOST_OTHER -DDEVICE_PORTINOUT=1 -DTARGET_RTOS_M4_M7 -DDEVICE_RTC=1 -DDEVICE_MPU=1 -D__CMSIS_RTOS -DTARGET_NAME=DISCO_L476VG -DTOOLCHAIN_GCC -DDEVICE_STDIO_MESSAGES=1 -DDEVICE_CAN=1 -DTARGET_STM32L476xG -DTARGET_CORTEX_M -DMBED_BUILD_TIMESTAMP=1556185789.82 -DDEVICE_I2C_ASYNCH=1 -DTARGET_LIKE_CORTEX_M4 -DDEVICE_ANALOGOUT=1 -DTARGET_M4 -DDEVICE_QSPI=1 -DTARGET_STM32L4 -DDEVICE_SPI_ASYNCH=1 -DDEVICE_LPTICKER=1 -DDEVICE_PWMOUT=1 -DCOMPONENT_FLASHIAP=1 -DTARGET_STM32L476VG -DMBED_TICKLESS -DDEVICE_INTERRUPTIN=1 -DCOMPONENT_QSPIF=1 -DCOMPONENT_PSA_SRV_IMPL=1 -DTARGET_CORTEX -DDEVICE_I2C=1 -DTRANSACTION_QUEUE_SIZE_SPI=2 -DDEVICE_USBDEVICE=1 -D__CORTEX_M4 -DTARGET_DISCO_L476VG -DTARGET_FAMILY_STM32 -DDEVICE_PORTIN=1 -DTARGET_RELEASE -DTARGET_STM -DDEVICE_SERIAL_FC=1 -DCOMPONENT_PSA_SRV_EMUL=1 -DDEVICE_USTICKER=1 -DDEVICE_TRNG=1 -DTARGET_LIKE_MBED -D__MBED_CMSIS_RTOS_CM -DDEVICE_SLEEP=1 -DTOOLCHAIN_GCC_ARM -DMBED_TEST_MODE -DDEVICE_SPI=1 -DCOMPONENT_NSPE=1 -DDEVICE_SPISLAVE=1 -DDEVICE_ANALOGIN=1 -DDEVICE_SERIAL=1 -DDEVICE_FLASH=1 -DARM_MATH_CM4
+Compile [100.0%]: main.cpp
+Compile: arm-none-eabi-g++ -std=gnu++98 -fno-rtti -Wvla -c -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fmessage-length=0 -fno-exceptions -fno-builtin -ffunction-sections -fdata-sections -funsigned-char -MMD -fno-delete-null-pointer-checks -fomit-frame-pointer -Os -g1 -DMBED_TRAP_ERRORS_ENABLED=1 -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -DMBED_ROM_START=0x8000000 -DMBED_ROM_SIZE=0x100000 -DMBED_RAM_START=0x20000000 -DMBED_RAM_SIZE=0x18000 -DMBED_RAM1_START=0x10000000 -DMBED_RAM1_SIZE=0x8000 -D__MBED__=1 -DDEVICE_I2CSLAVE=1 -D__FPU_PRESENT=1 -DDEVICE_PORTOUT=1 -DUSBHOST_OTHER -DDEVICE_PORTINOUT=1 -DTARGET_RTOS_M4_M7 -DDEVICE_RTC=1 -DDEVICE_MPU=1 -D__CMSIS_RTOS -DTARGET_NAME=DISCO_L476VG -DTOOLCHAIN_GCC -DDEVICE_STDIO_MESSAGES=1 -DDEVICE_CAN=1 -DTARGET_STM32L476xG -DTARGET_CORTEX_M -DMBED_BUILD_TIMESTAMP=1556185789.82 -DDEVICE_I2C_ASYNCH=1 -DTARGET_LIKE_CORTEX_M4 -DDEVICE_ANALOGOUT=1 -DTARGET_M4 -DDEVICE_QSPI=1 -DTARGET_STM32L4 -DDEVICE_SPI_ASYNCH=1 -DDEVICE_LPTICKER=1 -DDEVICE_PWMOUT=1 -DCOMPONENT_FLASHIAP=1 -DTARGET_STM32L476VG -DMBED_TICKLESS -DDEVICE_INTERRUPTIN=1 -DCOMPONENT_QSPIF=1 -DCOMPONENT_PSA_SRV_IMPL=1 -DTARGET_CORTEX -DDEVICE_I2C=1 -DTRANSACTION_QUEUE_SIZE_SPI=2 -DDEVICE_USBDEVICE=1 -D__CORTEX_M4 -DTARGET_DISCO_L476VG -DTARGET_FAMILY_STM32 -DDEVICE_PORTIN=1 -DTARGET_RELEASE -DTARGET_STM -DDEVICE_SERIAL_FC=1 -DCOMPONENT_PSA_SRV_EMUL=1 -DDEVICE_USTICKER=1 -DDEVICE_TRNG=1 -DTARGET_LIKE_MBED -D__MBED_CMSIS_RTOS_CM -DDEVICE_SLEEP=1 -DTOOLCHAIN_GCC_ARM -DMBED_TEST_MODE -DDEVICE_SPI=1 -DCOMPONENT_NSPE=1 -DDEVICE_SPISLAVE=1 -DDEVICE_ANALOGIN=1 -DDEVICE_SERIAL=1 -DDEVICE_FLASH=1 -DARM_MATH_CM4 @.\BUILD\tests\DISCO_L476VG\GCC_ARM\.\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\.includes_2800f2a6a122912aa9f92a0974f76864.txt -include .\BUILD\tests\DISCO_L476VG\GCC_ARM\.\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\mbed_config.h -MD -MF BUILD\tests\DISCO_L476VG\GCC_ARM\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\main.d -o BUILD\tests\DISCO_L476VG\GCC_ARM\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\main.o .\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\main.cpp
+[DEBUG] Return: 0
+Link: functionality
+Preproc: arm-none-eabi-cpp -E -P BUILD\tests\DISCO_L476VG\GCC_ARM\mbed-os\targets\TARGET_STM\TARGET_STM32L4\TARGET_STM32L476xG\device\TOOLCHAIN_GCC_ARM\STM32L476XX.ld -Wl,--gc-sections -Wl,--wrap,main -Wl,--wrap,_malloc_r -Wl,--wrap,_free_r -Wl,--wrap,_realloc_r -Wl,--wrap,_memalign_r -Wl,--wrap,_calloc_r -Wl,--wrap,exit -Wl,--wrap,atexit -Wl,-n -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -DMBED_ROM_START=0x8000000 -DMBED_ROM_SIZE=0x100000 -DMBED_RAM_START=0x20000000 -DMBED_RAM_SIZE=0x18000 -DMBED_RAM1_START=0x10000000 -DMBED_RAM1_SIZE=0x8000 -DMBED_BOOT_STACK_SIZE=1024 -o .\BUILD\tests\DISCO_L476VG\GCC_ARM\.\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\.link_script.ld
+[DEBUG] Return: 0
+Link: arm-none-eabi-gcc @.\BUILD\tests\DISCO_L476VG\GCC_ARM\.\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\.link_options.txt
+[DEBUG] Return: 0
+Elf2Bin: functionality
+FromELF: arm-none-eabi-objcopy -O binary .\BUILD\tests\DISCO_L476VG\GCC_ARM\.\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\functionality.elf .\BUILD\tests\DISCO_L476VG\GCC_ARM\.\mbed-os\features\storage\nvstore\TESTS\nvstore\functionality\functionality.bin
+[DEBUG] Return: 0
+| Module                          |         .text |       .data |        .bss |
+|---------------------------------|---------------|-------------|-------------|
+| [fill]                          |     180(+180) |     15(+15) |     37(+37) |
+| [lib]\c.a                       | 26169(+26169) | 2472(+2472) |     89(+89) |
+| [lib]\gcc.a                     |   3168(+3168) |       0(+0) |       0(+0) |
+| [lib]\misc                      |     252(+252) |     16(+16) |     28(+28) |
+| [lib]\stdc++.a                  |         1(+1) |       0(+0) |       0(+0) |
+| cmsis\TARGET_CORTEX_M           |   1033(+1033) |       0(+0) |     84(+84) |
+| components\802.15.4_RF          |       96(+96) |       0(+0) |       0(+0) |
+| components\storage              |     185(+185) |       4(+4) |       4(+4) |
+| components\wifi                 |       62(+62) |       0(+0) |       0(+0) |
+| drivers\FlashIAP.o              |     672(+672) |       0(+0) |     48(+48) |
+| drivers\RawSerial.o             |     304(+304) |       0(+0) |       0(+0) |
+| drivers\Serial.o                |       54(+54) |       0(+0) |       0(+0) |
+| drivers\SerialBase.o            |     521(+521) |       0(+0) |       0(+0) |
+| drivers\Ticker.o                |     228(+228) |       0(+0) |       0(+0) |
+| drivers\Timeout.o               |     177(+177) |       0(+0) |       0(+0) |
+| drivers\TimerEvent.o            |     168(+168) |       0(+0) |       0(+0) |
+| drivers\UARTSerial.o            |       20(+20) |       0(+0) |       0(+0) |
+| events\mbed_shared_queues.o     |       68(+68) |       0(+0) |       0(+0) |
+| features\frameworks             |   7887(+7887) |     69(+69) |   465(+465) |
+| features\netsocket              |       32(+32) |       0(+0) |       0(+0) |
+| features\storage                | 11550(+11550) |       4(+4) |   258(+258) |
+| hal\mbed_critical_section_api.o |     156(+156) |       0(+0) |       2(+2) |
+| hal\mbed_flash_api.o            |       14(+14) |       0(+0) |       0(+0) |
+| hal\mbed_gpio.o                 |       76(+76) |       0(+0) |       0(+0) |
+| hal\mbed_pinmap_common.o        |     254(+254) |       0(+0) |       0(+0) |
+| hal\mbed_ticker_api.o           |   1185(+1185) |       0(+0) |       0(+0) |
+| hal\mbed_us_ticker_api.o        |       68(+68) |       4(+4) |     64(+64) |
+| hal\mpu                         |     246(+246) |       0(+0) |       0(+0) |
+| platform\FileHandle.o           |         4(+4) |       0(+0) |       0(+0) |
+| platform\mbed_alloc_wrappers.o  |       16(+16) |       0(+0) |       0(+0) |
+| platform\mbed_assert.o          |       32(+32) |       0(+0) |       0(+0) |
+| platform\mbed_board.o           |     207(+207) |       0(+0) |       0(+0) |
+| platform\mbed_critical.o        |     258(+258) |       0(+0) |       4(+4) |
+| platform\mbed_error.o           |   1143(+1143) |       0(+0) |   114(+114) |
+| platform\mbed_mpu_mgmt.o        |     351(+351) |       0(+0) |       4(+4) |
+| platform\mbed_retarget.o        |   1646(+1646) |   260(+260) |     16(+16) |
+| platform\mbed_sleep_manager.o   |     231(+231) |       0(+0) |       2(+2) |
+| platform\mbed_wait_api_rtos.o   |     251(+251) |       0(+0) |       0(+0) |
+| rtos\Mutex.o                    |     290(+290) |       0(+0) |       0(+0) |
+| rtos\Semaphore.o                |     181(+181) |       0(+0) |       0(+0) |
+| rtos\TARGET_CORTEX              |   9714(+9714) |   168(+168) | 6289(+6289) |
+| rtos\ThisThread.o               |     185(+185) |       0(+0) |       0(+0) |
+| rtos\Thread.o                   |     779(+779) |       0(+0) |       0(+0) |
+| targets\TARGET_STM              | 13049(+13049) |       4(+4) |   908(+908) |
+| Subtotals                       | 83163(+83163) | 3016(+3016) | 8416(+8416) |
+Total Static RAM memory (data + bss): 11432(+11432) bytes
+Total Flash memory (text + data): 86179(+86179) bytes
+
+Image: BUILD/tests/DISCO_L476VG/GCC_ARM/mbed-os/features/storage/nvstore/TESTS/nvstore/functionality/functionality.bin
+
+WARNING: MBED_GCC_ARM_PATH set as environment variable but doesn't exist
+Memory map breakdown for built projects (values in Bytes):
+| name          | target       | toolchain | static_ram | total_flash |
+|---------------|--------------|-----------|------------|-------------|
+| functionality | DISCO_L476VG | GCC_ARM   |      11432 |       86179 |
+
+
+Build successes:
+  * DISCO_L476VG::GCC_ARM::MBED-BUILD
+  * DISCO_L476VG::GCC_ARM::MBED-OS-FEATURES-STORAGE-NVSTORE-TESTS-NVSTORE-FUNCTIONALITY
+mbedgt: greentea test automation tool ver. 1.6.4
+mbedgt: test specification file '.\BUILD\tests\DISCO_L476VG\GCC_ARM\test_spec.json' (specified with --test-spec option)
+mbedgt: using '.\BUILD\tests\DISCO_L476VG\GCC_ARM\test_spec.json' from current directory!
+mbedgt: detecting connected mbed-enabled devices...
+mbedgt: detected 3 devices
+	| platform_name     | platform_name_unique | serial_port | mount_point | target_id                                        |
+	|-------------------|----------------------|-------------|-------------|--------------------------------------------------|
+	| DISCO_L476VG      | DISCO_L476VG[0]      | COM48       | D:          | 08200221193F6779267BFE64                         |
+	| NUCLEO_L476RG     | NUCLEO_L476RG[0]     | COM51       | F:          | 07650221133869772C7CFF2F                         |
+	| RHOMBIO_L476DMW1K | RHOMBIO_L476DMW1K[0] | COM40       | E:          | 150000000412f12700000000000000000000000097969902 |
+mbedgt: processing target 'DISCO_L476VG' toolchain 'GCC_ARM' compatible platforms... (note: switch set to --parallel 1)
+	| platform_name | platform_name_unique | serial_port | mount_point | target_id                |
+	|---------------|----------------------|-------------|-------------|--------------------------|
+	| DISCO_L476VG  | DISCO_L476VG[0]      | COM48:9600  | D:          | 08200221193F6779267BFE64 |
+mbedgt: test case filter (specified with -n option)
+	mbed-os-features-storage-nvstore-tests-nvstore-functionality
+	test filtered in 'mbed-os-features-storage-nvstore-tests-nvstore-functionality'
+mbedgt: running 1 test for platform 'DISCO_L476VG' and toolchain 'GCC_ARM'
+	use 1 instance of execution threads for testing
+mbedgt: checking for 'host_tests' directory above image directory structure
+	'host_tests' directory not found: two directory levels above image path checked
+mbedgt: selecting test case observer...
+	calling mbedhtrun: mbedhtrun -m DISCO_L476VG -p COM48:9600 -f "BUILD/tests/DISCO_L476VG/GCC_ARM/mbed-os/features/storage/nvstore/TESTS/nvstore/functionality/functionality.bin" -d D: -c default -t 08200221193F6779267BFE64 -r default -C 4 --sync 5 -P 60
+mbedgt: mbed-host-test-runner: started
+[1556185803.77][HTST][INF] host test executor ver. 0.0.5
+[1556185803.77][HTST][INF] copy image onto target...
+[1556185803.77][COPY][INF] Waiting up to 60 sec for '08200221193F6779267BFE64' mount point (current is 'D:')...
+        1 file(s) copied.
+[1556185814.13][HTST][INF] starting host test process...
+[1556185814.76][CONN][INF] starting connection process...
+[1556185814.76][CONN][INF] notify event queue about extra 60 sec timeout for serial port pooling
+[1556185814.76][CONN][INF] initializing serial port listener...
+[1556185814.76][PLGN][INF] Waiting up to 60 sec for '08200221193F6779267BFE64' serial port (current is 'COM48')...
+[1556185814.79][HTST][INF] setting timeout to: 60 sec
+[1556185814.80][SERI][INF] serial(port=COM48, baudrate=9600, read_timeout=0.01, write_timeout=5)
+[1556185814.80][SERI][INF] reset device using 'default' plugin...
+[1556185815.05][SERI][INF] waiting 1.00 sec after reset
+[1556185816.05][SERI][INF] wait for it...
+[1556185816.09][SERI][TXD] mbedmbedmbedmbedmbedmbedmbedmbedmbedmbed
+[1556185816.09][CONN][INF] sending up to 5 __sync packets (specified with --sync=5)
+[1556185816.09][CONN][INF] sending preamble 'a25ef09f-0556-45dc-b305-520c6cd25f40'
+[1556185816.13][SERI][TXD] {{__sync;a25ef09f-0556-45dc-b305-520c6cd25f40}}
+[1556185816.19][CONN][RXD] mbedmbedmbedmbedmbedmbedmbedmbed
+[1556185816.24][CONN][INF] found SYNC in stream: {{__sync;a25ef09f-0556-45dc-b305-520c6cd25f40}} it is #0 sent, queued...
+[1556185816.26][HTST][INF] sync KV found, uuid=a25ef09f-0556-45dc-b305-520c6cd25f40, timestamp=1556185816.241000
+[1556185816.26][CONN][INF] found KV pair in stream: {{__version;1.3.0}}, queued...
+[1556185816.27][HTST][INF] DUT greentea-client version: 1.3.0
+[1556185816.29][CONN][INF] found KV pair in stream: {{__timeout;120}}, queued...
+[1556185816.30][HTST][INF] setting timeout to: 120 sec
+[1556185816.32][CONN][INF] found KV pair in stream: {{__host_test_name;default_auto}}, queued...
+[1556185816.34][HTST][INF] host test class: '<class 'mbed_os_tools.test.host_tests.default_auto.DefaultAuto'>'
+[1556185816.34][HTST][INF] host test setup() call...
+[1556185816.34][HTST][INF] CALLBACKs updated
+[1556185816.34][HTST][INF] host test detected: default_auto
+[1556185816.35][CONN][INF] found KV pair in stream: {{__testcase_count;3}}, queued...
+[1556185816.38][CONN][RXD] >>> Running 3 test cases...
+[1556185816.43][CONN][INF] found KV pair in stream: {{__testcase_name;NVStore: Basic functionality}}, queued...
+[1556185816.46][CONN][INF] found KV pair in stream: {{__testcase_name;NVStore: Race test}}, queued...
+[1556185816.52][CONN][RXD]
+[1556185816.52][CONN][INF] found KV pair in stream: {{__testcase_name;NVStore: Multiple thread test}}, queued...
+[1556185816.59][CONN][RXD] >>> Running case #1: 'NVStore: Basic functionality'...
+[1556185816.63][CONN][INF] found KV pair in stream: {{__testcase_start;NVStore: Basic functionality}}, queued...
+[1556185816.65][CONN][RXD] NVStore areas:
+[1556185816.69][CONN][RXD] Area 0: address 0x080fe000, size 4096 (0x1000)
+[1556185816.76][CONN][RXD] Area 1: address 0x080ff000, size 4096 (0x1000)
+[1556185816.93][CONN][RXD] Max keys 20 (out of 255 possible ones)
+[1556185817.01][CONN][INF] found KV pair in stream: {{__testcase_finish;NVStore: Basic functionality;1;0}}, queued...
+[1556185817.05][CONN][RXD] >>> 'NVStore: Basic functionality': 1 passed, 0 failed
+[1556185817.05][CONN][RXD]
+[1556185817.10][CONN][RXD] >>> Running case #2: 'NVStore: Race test'...
+[1556185817.15][CONN][INF] found KV pair in stream: {{__testcase_start;NVStore: Race test}}, queued...
+[1556185817.40][CONN][INF] found KV pair in stream: {{__testcase_finish;NVStore: Race test;1;0}}, queued...
+[1556185817.44][CONN][RXD] >>> 'NVStore: Race test': 1 passed, 0 failed
+[1556185817.44][CONN][RXD]
+[1556185817.51][CONN][RXD] >>> Running case #3: 'NVStore: Multiple thread test'...
+[1556185817.55][CONN][INF] found KV pair in stream: {{__testcase_start;NVStore: Multiple thread test}}, queued...
+[1556185936.42][HTST][INF] test suite run finished after 120.12 sec...
+[1556185936.44][CONN][INF] received special event '__host_test_finished' value='True', finishing
+[1556185936.47][HTST][INF] CONN exited with code: 0
+[1556185936.47][HTST][INF] No events in queue
+[1556185936.47][HTST][INF] stopped consuming events
+[1556185936.47][HTST][INF] host test result(): None
+[1556185936.47][HTST][WRN] missing __exit event from DUT
+[1556185936.47][HTST][WRN] missing __exit_event_queue event from host test
+[1556185936.47][HTST][ERR] missing __exit_event_queue event from host test and no result from host test, timeout...
+[1556185936.47][HTST][INF] calling blocking teardown()
+[1556185936.47][HTST][INF] teardown() finished
+[1556185936.47][HTST][INF] {{result;timeout}}
+mbedgt: retry mbedhtrun 1/1
+mbedgt: ['mbedhtrun', '-m', u'DISCO_L476VG', '-p', u'COM48:9600', '-f', u'"BUILD/tests/DISCO_L476VG/GCC_ARM/mbed-os/features/storage/nvstore/TESTS/nvstore/functionality/functionality.bin"', '-d', 'D:', '-c', 'default', '-t', u'08200221193F6779267BFE64', '-r', 'default', '-C', '4', '--sync', '5', '-P', '60'] failed after 1 count
+mbedgt: checking for GCOV data...
+mbedgt: mbed-host-test-runner: stopped and returned 'TIMEOUT'
+mbedgt: test on hardware with target id: 08200221193F6779267BFE64
+mbedgt: test suite 'mbed-os-features-storage-nvstore-tests-nvstore-functionality' .................... TIMEOUT in 133.23 sec
+	test case: 'NVStore: Basic functionality' .................................................... OK in 0.38 sec
+	test case: 'NVStore: Multiple thread test' ................................................... ERROR in 0.00 sec
+	test case: 'NVStore: Race test' .............................................................. OK in 0.25 sec
+mbedgt: all tests finished!
+mbedgt: shuffle seed: 0.9370991126
+mbedgt: test suite report:
+| target               | platform_name | test suite                                                   | result  | elapsed_time (sec) | copy_method |
+|----------------------|---------------|--------------------------------------------------------------|---------|--------------------|-------------|
+| DISCO_L476VG-GCC_ARM | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | TIMEOUT | 133.23             | default     |
+mbedgt: test suite results: 1 TIMEOUT
+mbedgt: test case report:
+| target               | platform_name | test suite                                                   | test case                     | passed | failed | result | elapsed_time (sec) |
+|----------------------|---------------|--------------------------------------------------------------|-------------------------------|--------|--------|--------|--------------------|
+| DISCO_L476VG-GCC_ARM | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | NVStore: Basic functionality  | 1      | 0      | OK     | 0.38               |
+| DISCO_L476VG-GCC_ARM | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | NVStore: Multiple thread test | 0      | 0      | ERROR  | 0.0                |
+| DISCO_L476VG-GCC_ARM | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | NVStore: Race test            | 1      | 0      | OK     | 0.25               |
+mbedgt: test case results: 2 OK / 1 ERROR
+mbedgt: completed in 137.21 sec
+mbedgt: exited with code 1
+[mbed] Working path "C:\arm_test_5_12_1\foo5" (program)
+[mbed] Exec "c:\python27\python.exe -u C:\arm_test_5_12_1\foo5\mbed-os\tools\test.py -D MBED_TEST_MODE -t GCC_ARM -m disco_l476vg --source . --build .\BUILD\tests\DISCO_L476VG\GCC_ARM --test-spec .\BUILD\tests\DISCO_L476VG\GCC_ARM\test_spec.json --build-data .\BUILD\tests\DISCO_L476VG\GCC_ARM\build_data.json -n mbed-os-features-storage-nvstore-tests-nvstore-functionality -v --greentea" in "C:\arm_test_5_12_1\foo5"
+[mbed] Exec "mbedgt --test-spec .\BUILD\tests\DISCO_L476VG\GCC_ARM\test_spec.json -n mbed-os-features-storage-nvstore-tests-nvstore-functionality -V" in "C:\arm_test_5_12_1\foo5"

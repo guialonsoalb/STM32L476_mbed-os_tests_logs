@@ -1,0 +1,115 @@
+mbedgt: greentea test automation tool ver. 1.6.4
+mbedgt: test specification file '.\BUILD\tests\DISCO_L476VG\ARMC5\test_spec.json' (specified with --test-spec option)
+mbedgt: using '.\BUILD\tests\DISCO_L476VG\ARMC5\test_spec.json' from current directory!
+mbedgt: detecting connected mbed-enabled devices...
+mbedgt: detected 3 devices
+	| platform_name     | platform_name_unique | serial_port | mount_point | target_id                                        |
+	|-------------------|----------------------|-------------|-------------|--------------------------------------------------|
+	| DISCO_L476VG      | DISCO_L476VG[0]      | COM48       | D:          | 08200221193F6779267BFE64                         |
+	| NUCLEO_L476RG     | NUCLEO_L476RG[0]     | COM51       | F:          | 07650221622F65185D6BF340                         |
+	| RHOMBIO_L476DMW1K | RHOMBIO_L476DMW1K[0] | COM40       | E:          | 150000000412f12700000000000000000000000097969902 |
+mbedgt: processing target 'DISCO_L476VG' toolchain 'ARMC5' compatible platforms... (note: switch set to --parallel 1)
+	| platform_name | platform_name_unique | serial_port | mount_point | target_id                |
+	|---------------|----------------------|-------------|-------------|--------------------------|
+	| DISCO_L476VG  | DISCO_L476VG[0]      | COM48:9600  | D:          | 08200221193F6779267BFE64 |
+mbedgt: test case filter (specified with -n option)
+	mbed-os-features-storage-nvstore-tests-nvstore-functionality
+	test filtered in 'mbed-os-features-storage-nvstore-tests-nvstore-functionality'
+mbedgt: running 1 test for platform 'DISCO_L476VG' and toolchain 'ARMC5'
+	use 1 instance of execution threads for testing
+mbedgt: checking for 'host_tests' directory above image directory structure
+	'host_tests' directory not found: two directory levels above image path checked
+mbedgt: selecting test case observer...
+	calling mbedhtrun: mbedhtrun -m DISCO_L476VG -p COM48:9600 -f "BUILD/tests/DISCO_L476VG/ARMC5/mbed-os/features/storage/nvstore/TESTS/nvstore/functionality/functionality.bin" -d D: -c default -t 08200221193F6779267BFE64 -r default -C 4 --sync 5 -P 60
+mbedgt: mbed-host-test-runner: started
+[1556186958.42][HTST][INF] host test executor ver. 0.0.5
+[1556186958.42][HTST][INF] copy image onto target...
+[1556186958.42][COPY][INF] Waiting up to 60 sec for '08200221193F6779267BFE64' mount point (current is 'D:')...
+        1 file(s) copied.
+[1556186968.21][HTST][INF] starting host test process...
+[1556186968.62][CONN][INF] starting connection process...
+[1556186968.62][CONN][INF] notify event queue about extra 60 sec timeout for serial port pooling
+[1556186968.62][CONN][INF] initializing serial port listener...
+[1556186968.62][PLGN][INF] Waiting up to 60 sec for '08200221193F6779267BFE64' serial port (current is 'COM48')...
+[1556186968.63][HTST][INF] setting timeout to: 60 sec
+[1556186968.68][SERI][INF] serial(port=COM48, baudrate=9600, read_timeout=0.01, write_timeout=5)
+[1556186968.68][SERI][INF] reset device using 'default' plugin...
+[1556186968.95][SERI][INF] waiting 1.00 sec after reset
+[1556186969.96][SERI][INF] wait for it...
+[1556186969.99][SERI][TXD] mbedmbedmbedmbedmbedmbedmbedmbedmbedmbed
+[1556186969.99][CONN][INF] sending up to 5 __sync packets (specified with --sync=5)
+[1556186969.99][CONN][INF] sending preamble 'ebe79157-24b4-4f4a-a837-7188793f00ea'
+[1556186970.04][SERI][TXD] {{__sync;ebe79157-24b4-4f4a-a837-7188793f00ea}}
+[1556186970.12][CONN][RXD] mbedmbedmbedmbedmbedmbedmbedmbed
+[1556186970.15][CONN][INF] found SYNC in stream: {{__sync;ebe79157-24b4-4f4a-a837-7188793f00ea}} it is #0 sent, queued...
+[1556186970.17][HTST][INF] sync KV found, uuid=ebe79157-24b4-4f4a-a837-7188793f00ea, timestamp=1556186970.150000
+[1556186970.18][CONN][INF] found KV pair in stream: {{__version;1.3.0}}, queued...
+[1556186970.20][HTST][INF] DUT greentea-client version: 1.3.0
+[1556186970.20][CONN][INF] found KV pair in stream: {{__timeout;120}}, queued...
+[1556186970.21][HTST][INF] setting timeout to: 120 sec
+[1556186970.23][CONN][INF] found KV pair in stream: {{__host_test_name;default_auto}}, queued...
+[1556186970.24][HTST][INF] host test class: '<class 'mbed_os_tools.test.host_tests.default_auto.DefaultAuto'>'
+[1556186970.24][HTST][INF] host test setup() call...
+[1556186970.24][HTST][INF] CALLBACKs updated
+[1556186970.24][HTST][INF] host test detected: default_auto
+[1556186970.26][CONN][INF] found KV pair in stream: {{__testcase_count;3}}, queued...
+[1556186970.29][CONN][RXD] >>> Running 3 test cases...
+[1556186970.34][CONN][INF] found KV pair in stream: {{__testcase_name;NVStore: Basic functionality}}, queued...
+[1556186970.38][CONN][INF] found KV pair in stream: {{__testcase_name;NVStore: Race test}}, queued...
+[1556186970.43][CONN][RXD]
+[1556186970.43][CONN][INF] found KV pair in stream: {{__testcase_name;NVStore: Multiple thread test}}, queued...
+[1556186970.49][CONN][RXD] >>> Running case #1: 'NVStore: Basic functionality'...
+[1556186970.54][CONN][INF] found KV pair in stream: {{__testcase_start;NVStore: Basic functionality}}, queued...
+[1556186970.56][CONN][RXD] NVStore areas:
+[1556186970.60][CONN][RXD] Area 0: address 0x080fe000, size 4096 (0x1000)
+[1556186970.65][CONN][RXD] Area 1: address 0x080ff000, size 4096 (0x1000)
+[1556186970.84][CONN][RXD] Max keys 20 (out of 255 possible ones)
+[1556186970.90][CONN][INF] found KV pair in stream: {{__testcase_finish;NVStore: Basic functionality;1;0}}, queued...
+[1556186970.96][CONN][RXD] >>> 'NVStore: Basic functionality': 1 passed, 0 failed
+[1556186970.96][CONN][RXD]
+[1556186971.01][CONN][RXD] >>> Running case #2: 'NVStore: Race test'...
+[1556186971.06][CONN][INF] found KV pair in stream: {{__testcase_start;NVStore: Race test}}, queued...
+[1556186971.31][CONN][INF] found KV pair in stream: {{__testcase_finish;NVStore: Race test;1;0}}, queued...
+[1556186971.35][CONN][RXD] >>> 'NVStore: Race test': 1 passed, 0 failed
+[1556186971.35][CONN][RXD]
+[1556186971.42][CONN][RXD] >>> Running case #3: 'NVStore: Multiple thread test'...
+[1556186971.46][CONN][INF] found KV pair in stream: {{__testcase_start;NVStore: Multiple thread test}}, queued...
+[1556187090.31][HTST][INF] test suite run finished after 120.10 sec...
+[1556187090.33][CONN][INF] received special event '__host_test_finished' value='True', finishing
+[1556187090.38][HTST][INF] CONN exited with code: 0
+[1556187090.38][HTST][INF] No events in queue
+[1556187090.38][HTST][INF] stopped consuming events
+[1556187090.38][HTST][INF] host test result(): None
+[1556187090.38][HTST][WRN] missing __exit event from DUT
+[1556187090.38][HTST][WRN] missing __exit_event_queue event from host test
+[1556187090.38][HTST][ERR] missing __exit_event_queue event from host test and no result from host test, timeout...
+[1556187090.38][HTST][INF] calling blocking teardown()
+[1556187090.38][HTST][INF] teardown() finished
+[1556187090.38][HTST][INF] {{result;timeout}}
+mbedgt: retry mbedhtrun 1/1
+mbedgt: ['mbedhtrun', '-m', u'DISCO_L476VG', '-p', u'COM48:9600', '-f', u'"BUILD/tests/DISCO_L476VG/ARMC5/mbed-os/features/storage/nvstore/TESTS/nvstore/functionality/functionality.bin"', '-d', 'D:', '-c', 'default', '-t', u'08200221193F6779267BFE64', '-r', 'default', '-C', '4', '--sync', '5', '-P', '60'] failed after 1 count
+mbedgt: checking for GCOV data...
+mbedgt: mbed-host-test-runner: stopped and returned 'TIMEOUT'
+mbedgt: test on hardware with target id: 08200221193F6779267BFE64
+mbedgt: test suite 'mbed-os-features-storage-nvstore-tests-nvstore-functionality' .................... TIMEOUT in 132.52 sec
+	test case: 'NVStore: Basic functionality' .................................................... OK in 0.36 sec
+	test case: 'NVStore: Multiple thread test' ................................................... ERROR in 0.00 sec
+	test case: 'NVStore: Race test' .............................................................. OK in 0.25 sec
+mbedgt: all tests finished!
+mbedgt: shuffle seed: 0.1092109627
+mbedgt: test suite report:
+| target             | platform_name | test suite                                                   | result  | elapsed_time (sec) | copy_method |
+|--------------------|---------------|--------------------------------------------------------------|---------|--------------------|-------------|
+| DISCO_L476VG-ARMC5 | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | TIMEOUT | 132.52             | default     |
+mbedgt: test suite results: 1 TIMEOUT
+mbedgt: test case report:
+| target             | platform_name | test suite                                                   | test case                     | passed | failed | result | elapsed_time (sec) |
+|--------------------|---------------|--------------------------------------------------------------|-------------------------------|--------|--------|--------|--------------------|
+| DISCO_L476VG-ARMC5 | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | NVStore: Basic functionality  | 1      | 0      | OK     | 0.36               |
+| DISCO_L476VG-ARMC5 | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | NVStore: Multiple thread test | 0      | 0      | ERROR  | 0.0                |
+| DISCO_L476VG-ARMC5 | DISCO_L476VG  | mbed-os-features-storage-nvstore-tests-nvstore-functionality | NVStore: Race test            | 1      | 0      | OK     | 0.25               |
+mbedgt: test case results: 2 OK / 1 ERROR
+mbedgt: completed in 135.20 sec
+mbedgt: exited with code 1
+[mbed] Working path "C:\arm_test_5_12_1\foo5" (program)
+[mbed] Exec "mbedgt --test-spec .\BUILD\tests\DISCO_L476VG\ARMC5\test_spec.json -n mbed-os-features-storage-nvstore-tests-nvstore-functionality -V" in "C:\arm_test_5_12_1\foo5"
